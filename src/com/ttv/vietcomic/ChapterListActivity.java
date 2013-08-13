@@ -1,7 +1,8 @@
 package com.ttv.vietcomic;
-
+/**
+ * This is the ChapterListActivity class that
+ */
 import java.util.ArrayList;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 
