@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_tutruyen" >
+
+            <ImageButton
+                android:id="@+id/bt_back"
+                android:layout_width="51dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/backbutton" />
+
+            <ImageButton
+                android:id="@+id/bt_khotruyen"
+                android:layout_width="117dp"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/khotruyenbutton" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_truyen"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_daidien"
+                android:layout_width="110dp"
+                android:layout_height="122dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/bg_anhdaidien_truyen" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/lb_ten_truyen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/lb_stt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stt" />
+
+                <TextView
+                    android:id="@+id/lb_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/author" />
+
+                <TextView
+                    android:id="@+id/lb_numchap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/numchap" />
+
+                <TextView
+                    android:id="@+id/lb_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+    </LinearLayout>
+
+</merge>

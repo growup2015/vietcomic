@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <!-- Dummy content. -->
+
+    <com.ttv.vietcomic.TouchImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.ttv.vietcomic.TouchImageView>
+
+</LinearLayout>

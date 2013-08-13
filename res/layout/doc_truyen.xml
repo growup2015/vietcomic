@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+android:id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" >
+    </android.support.v4.view.ViewPager>
+
+    <!-- top bar -->
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#55500000"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/bar_top"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#55000000"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" >
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="53dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/button_back"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="" />
+            <!-- top status -->
+
+            <LinearLayout
+                android:id="@+id/label_stt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="3dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/stt_chap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceInverse" />
+
+                <TextView
+                    android:id="@+id/stt_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceInverse" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <!-- bottom bar layout -->
+
+    <RelativeLayout
+        android:id="@+id/bar_botton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#55500000"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <!-- next button -->
+
+        <ImageButton
+            android:id="@+id/btn_nextchap"
+            android:layout_width="42dp"
+            android:layout_height="31dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:alpha="1"
+            android:src="@drawable/button_nexttap"
+            android:text="" />
+        <!-- previous button -->
+
+        <ImageButton
+            android:id="@+id/btn_prevchap"
+            android:layout_width="42dp"
+            android:layout_height="31dp"
+            android:layout_alignBottom="@+id/btn_nextchap"
+            android:layout_alignTop="@+id/btn_nextchap"
+            android:layout_toLeftOf="@+id/btn_nextchap"
+            android:src="@drawable/button_prevtap"
+            android:text="" />
+
+        <!-- <ProgressBar
+            android:id="@+id/loading_bar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp" /> -->
+        <!-- loading status -->
+
+        <TextView
+            android:id="@+id/label_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceInverse" />
+    </RelativeLayout>
+
+</FrameLayout>

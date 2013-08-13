@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VietComic</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="stt">Trạng thái: </string>
+    <string name="author">Tác giả: </string>
+    <string name="numchap">Số chương: </string>
+    <string name="view">Lượt xem: </string>
+    
+    <!-- Dialog -->
+     <string name="download_read">Vừa đọc vừa tải </string>
+     <string name="dowload">Tải truyện </string>
+     <string name="stop">Dừng tải </string>
+     <string name="read">Đọc truyện </string>
+     <string name="delete">Xóa dữ liệu </string>
+     <string name="contin">Tiếp tục tải </string>
+     
+     <string name="cancel">Hủy </string>
+
+</resources>
